@@ -1,0 +1,28 @@
+# GroundProtect Configuration
+
+# Plugin Settings
+plugin:
+  debug: false
+  language: zh_TW
+
+# Wand Settings
+wand:
+  material: STICK
+  name: "§aGroundProtect 選取工具"
+  lore:
+    - "§7左鍵選取方塊"
+    - "§7右鍵查看資訊"
+
+# Message Settings
+messages:
+  prefix: "§a[GroundProtect]§r "
+  selected: "§a已選取: {world} {x} {y} {z} {block}"
+  locked: "§a方塊已鎖定"
+  unlocked: "§c方塊已解除鎖定"
+  removed: "§c保護資料已刪除"
+  no_permission: "§c你沒有權限執行此指令"
+  block_protected: "§c此方塊受到保護"
+  not_selected: "§c你還沒選取任何方塊"
+  pos1_set: "§a第一點已設置: {x} {y} {z}"
+  pos2_set: "§a第二點已設置: {x} {y} {z}"
+  region_locked: "§a區域已鎖定 ({x1},{y1},{z1} ~ {x2},{y2},{z2})"
