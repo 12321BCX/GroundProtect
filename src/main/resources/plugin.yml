@@ -1,0 +1,44 @@
+name: GroundProtect
+version: 1.0.0
+main: com.example.groundprotect.GroundProtect
+description: A permanent block protection system for Paper servers
+authors: [Developer]
+
+commands:
+  gp:
+    description: GroundProtect main command
+    usage: /gp <subcommand>
+    aliases:
+      - groundprotect
+
+permissions:
+  groundprotect.use:
+    description: Allow players to use GroundProtect viewer
+    default: op
+  groundprotect.admin:
+    description: Allow players to lock/unlock blocks
+    default: op
+  groundprotect.admin.*:
+    description: All GroundProtect admin commands
+    default: op
+    children:
+      groundprotect.admin.lock: true
+      groundprotect.admin.unlock: true
+      groundprotect.admin.remove: true
+      groundprotect.admin.wand: true
+      groundprotect.admin.reload: true
+  groundprotect.admin.lock:
+    description: Allow locking blocks
+    default: op
+  groundprotect.admin.unlock:
+    description: Allow unlocking blocks
+    default: op
+  groundprotect.admin.remove:
+    description: Allow removing protections
+    default: op
+  groundprotect.admin.wand:
+    description: Allow using selection wand
+    default: op
+  groundprotect.admin.reload:
+    description: Allow reloading configuration
+    default: op
