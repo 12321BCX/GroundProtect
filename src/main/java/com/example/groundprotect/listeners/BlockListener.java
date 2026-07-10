@@ -89,7 +89,7 @@ public class BlockListener implements Listener {
 
     @EventHandler
     public void onBlockSpread(BlockSpreadEvent event) {
-        if (protectionManager.isBlockProtected(event.getToBlock())) {
+         if (protectionManager.isBlockProtected(event.getBlock())) {
             event.setCancelled(true);
         }
     }
